@@ -44,9 +44,10 @@ def date_calculator(birthday):
   return age
 
 
-current_age = date_calculator(birthdays[name])
+#current_age = date_calculator(birthdays[name])
 
 if name in birthdays :
+  current_age = date_calculator(birthdays[name]) 
   print("{}'s birthday is {}.".format(name, birthdays [name]))
   print('{} is now {}  years old'.format(name, current_age))
   
